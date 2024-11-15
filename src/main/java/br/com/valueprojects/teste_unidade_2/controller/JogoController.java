@@ -30,25 +30,4 @@ public class JogoController {
 		return service.save(jogo);
 	}
 
-	private List<Jogo> jogos = new ArrayList<>();
-	private Juiz juiz = new Juiz();
-
-	// Criar um novo jogo
-	@PostMapping("/criar")
-	public Jogo criarJogo(@RequestBody String descricao) {
-		Jogo jogo = new Jogo(descricao);
-		jogos.add(jogo);
-		return jogo;
-	}
-
-	// Julgar um jogo
-	@PostMapping("/{id}/julgar")
-	public String julgarJogo(@PathVariable int id) {
-		Jogo jogo = jogos.get(id);
-		juiz.julga(jogo);
-		double primeiroColocado = juiz.getPrimeiroColocado();
-		double ultimoColocado = juiz.getUltimoColocado();
-		return "Primeiro colocado: " + primeiroColocado + ", Último colocado: " + ultimoColocado;
-	}
-
 }

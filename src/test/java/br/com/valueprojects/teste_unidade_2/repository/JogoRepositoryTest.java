@@ -12,7 +12,7 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 
 @DataJpaTest
-class Jogo_RepositoryTest {
+class JogoRepositoryTest {
 
     @Autowired
     private Jogo_Repository repo;

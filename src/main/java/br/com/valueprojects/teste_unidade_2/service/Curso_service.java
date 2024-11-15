@@ -21,6 +21,7 @@ public class Curso_service {
     @Autowired
     private Usuario_service usuarioService;
 
+
     public List<Curso_dto> queryAllCursos() {
         List<Curso> usuarios = repo.findAll();
         return usuarios.stream().map(Curso_dto::fromEntity).collect(Collectors.toList());
