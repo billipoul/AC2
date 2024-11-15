@@ -29,12 +29,6 @@ public class Jogo_dto {
         private double pontuacao;
     }
 
-    public Jogo_dto(Long id, String descricao, List<JogoResultados> resultados) {
-        this.id = id;
-        this.descricao = descricao;
-        this.resultados = resultados;
-    }
-
     public Jogo_dto() {}
 
     public static Jogo_dto fromEntity(Jogo jogo) {
