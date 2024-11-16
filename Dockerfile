@@ -4,7 +4,7 @@ FROM openjdk:17
 WORKDIR /ac2-integra
 
 # Copy the JAR file into the container at /educacaoGamificada
-COPY target/*.jar /ac2_ca/ac2_ca-0.0.1-SNAPSHOT.jar
+COPY target/*.jar /ac2_ca/teste-unidade-2-0.0.1-SNAPSHOT.jar
 
 # Expose the port that your application will run on
 EXPOSE 8585
