@@ -10,4 +10,4 @@ COPY target/*.jar /ac2_ca/ac2_ca-0.0.1-SNAPSHOT.jar
 EXPOSE 8585
 
 # Specify the command to run on container start
-CMD ["java", "-jar", "ac2_ca-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "teste-unidade-2-0.0.1-SNAPSHOT.jar"]
