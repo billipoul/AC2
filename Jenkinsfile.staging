@@ -11,7 +11,7 @@ pipeline {
     stage('Start container') {
       steps {
         echo 'Starting container from Docker Hub...'
-        bat ' setx DOCKER_BUILDKIT 1'
+        bat 'setx DOCKER_BUILDKIT 1'
         bat 'setx COMPOSE_DOCKER_CLI_BUILD 1'
         bat 'docker-compose -f docker-compose.staging.yml pull' // Baixa a imagem do Docker Hub
         bat 'docker-compose -f docker-compose.staging.yml up -d --no-color'
