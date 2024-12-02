@@ -23,7 +23,7 @@ pipeline {
       steps {
         bat 'setx DOCKER_BUILDKIT 1'
         bat 'setx COMPOSE_DOCKER_CLI_BUILD 1'
-        bat 'curl http://localhost:9091 || echo "Service not responding"'
+        bat 'curl http://localhost:9096 || echo "Service not responding"'
       }
     }
   }
