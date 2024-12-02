@@ -7,7 +7,6 @@ services:
       POSTGRES_DB: sapi
     volumes:
       - db-volume:/var/lib/postgresql/data
-      - billipoul/ac2/*
 
   api:
     image: billipoul/ac2:latest

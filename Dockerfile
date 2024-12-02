@@ -5,9 +5,9 @@ from  maven:3.8.4-openjdk-17 as maven-builder
 WORKDIR /AC2
 
 # Copy the JAR file into the container at /educacaoGamificada
-COPY src /app/src
-COPY pom.xml /app
-RUN mvn -f /app/pom.xml clean package -DskipTests
+COPY src /AC2 /src
+COPY pom.xml /AC2
+RUN mvn -f /AC2/pom.xml clean package -DskipTests
 FROM openjdk:17-alpine
 COPY target/*.jar /AC2/teste.jar
 
