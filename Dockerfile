@@ -9,7 +9,7 @@ COPY src /app/src
 COPY pom.xml /app
 RUN mvn -f /app/pom.xml clean package -DskipTests
 FROM openjdk:17-alpine
-COPY target/*.jar /ac2_ca/teste.jar
+COPY target/*.jar /AC2/teste.jar
 
 # Expose the port that your application will run on
 EXPOSE 8585
