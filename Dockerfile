@@ -1,5 +1,5 @@
-FROM openjdk:17
-from  maven:3.8.4-openjdk-17 as maven-builder
+FROM openjdk:21
+from  maven:3.8.4-openjdk-21 as maven-builder
 
 # Set the working directory in the container
 WORKDIR /ac2
@@ -13,5 +13,5 @@ COPY target/*.jar /ac2/app.jar
 EXPOSE 8585
 
 # Specify the command to run on container start
-ENTRYPOINT ["java", "-jar", "app.jar"]
-CMD ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "/ac2/app.jar"]
+CMD ["java", "-jar", "/ac2/app.jar"]
