@@ -6,7 +6,7 @@ WORKDIR /ac2
 # Copy the JAR file into the container at /educacaoGamificada
 COPY src /ac2/src
 COPY pom.xml /AC2
-COPY target\*.jar /ac2/app.jar
+COPY target/*.jar /ac2/app.jar
 
 # Expose the port that your application will run on
 EXPOSE 8585
