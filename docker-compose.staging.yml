@@ -9,7 +9,7 @@ services:
       - db-volume:/var/lib/postgresql/data
 
   api:
-    image: billipoul/ac2:latest
+    image: billipoul/ac2mvn clean package/install
     networks:
       - default  # Certifique-se de que está usando a rede adequada
     environment:
