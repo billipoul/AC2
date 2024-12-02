@@ -1,7 +1,7 @@
 FROM openjdk:17
 
 # Set the working directory in the container
-WORKDIR /ac2-integra
+WORKDIR /AC2
 
 # Copy the JAR file into the container at /educacaoGamificada
 COPY target/*.jar /ac2_ca/teste-unidade-2-0.0.1-SNAPSHOT.jar
